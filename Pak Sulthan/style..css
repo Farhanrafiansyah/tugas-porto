@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #FFC72C 0%, #c16910 100%);
+
+}
+
+#clock h2 {
+    position: relative;
+    display: block;
+    color: #000000;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-size: 0.8em;
+}
+
+#clock #time {
+    display: flex;
+}
+
+#clock #time div {
+    position: relative;
+    margin: 0 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+#clock #time div span {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 80px;
+    background: #DA291C;
+    color: #fff;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    z-index: 10;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+}
+
+#clock #time div span:nth-child(2) {
+    height: 28zpx;
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    z-index: 9;
+    box-shadow: none;
+    background: #83140c;
+    text-transform: uppercase;
+}
+
+#clock #time div:nth-last-child(2) span {
+    background: #DA291C;
+}
+
+#clock #time div:nth-last-child(2) span:nth-child(2) {
+    background: #83140c;
+
+}
+
+#clock #time div:nth-last-child(1) span {
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 40px;
+    font-size: 1.5em;
+    background: #fff;
+    color: #000;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+#clock #date {
+    text-align: center;
+    font-size: 1.2em;
+    color: #000000;
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px rgba(255,255,255,0.3);
+    animation: slideUp 1s ease-out;
+}
+
+#clock #time div:nth-last-child(1) span {
+    position: relative; 
+    bottom: auto; 
+    width: 60px;
+    height: 40px;
+    font-size: 1.5em;
+    background: #fff;
+    color: #000000;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0,0,0,0.2));
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: pulseSmall 1.5s infinite;
+    margin-top: 40px; 
+}
+
+#clock #time div:nth-last-child(1) span:nth-child(2) {
+    display: none; 
+}
