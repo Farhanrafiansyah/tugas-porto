@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Portfolio</title>
+</head>
+
+<body>    
+    <header>
+        <div class="container">
+            <nav aria-label="Primary navigation">
+                <div class="logo" tabindex="0">MyPortfolio</div>
+                <ul>
+                <li><a href="#about">About</a></li>    
+                <li><a href="#skills">Skill</a></li>    
+                <li><a href="#projects">Project</a></li>    
+                <li><a href="#contact">About</a></li>    
+                </ul>
+            </nav>
+        </div>  
+    </header>
+
+
+<main class="container" tabindex="0">
+
+<!-- About section -->
+<section id="about" class="about-me" aria-label="About Me section">
+    <h1>🪄Hallo, saya <strong>Farhan Rafiansyah</strong></h1>
+    <p>
+        Selamat Datang di situs web saya portfolio pribadi saya! Saya adalah seorang <strong>Siswa SMK Plus pelita nusantara</strong>
+        yang senang membuat aplikasi web menggunakan <strong>HTML,CSS,dan Java Script</strong>.
+    </p>
+    <p>
+        saya percaya bahwa teknologi adalah alat penting untuk membangun masa depan pendidikan yang lebih baik.
+    </p>
+</section>
+</main>
+<!-- Skill Section -->
+<section id="skills" aria-label="Skills section">
+    <h2>🎯 My Skills</h2>
+    <div class="skill-list" role="list">
+        <span class="skill" role="listitem">🧠 HTML5</span>
+        <span class="skill" role="listitem">🌈 CSS</span>
+        <span class="skill" role="listitem">🔥 JavaScript</span>
+        <span class="skill" role="listitem">📱 Responsive Design</span> 
+        <span class="skill" role="listitem">⛓‍💥 Git & GitHub</span> 
+        <span class="skill" role="listitem">⚙ Tailwind</span> 
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" aria-label="Projects section">
+    <h2>📁 Projects</h2>
+    <div class="projects-list">
+  
+      <article class="project-item" tabindex="0">
+        <h3>🧩 Portfolio Website</h3>
+        <p>
+          Website pribadi yang menampilkan profil, keterampilan, dan proyek. Dibangun menggunakan HTML, CSS, dan JavaScript.
+        </p>
+        <a href="portofolio"  class="project-link" target="_blank" rel="noopener">🔗 Lihat Project</a>
+        
+      </article>
+  
+      <article class="project-item" tabindex="0">
+        <h3>📝 website seperti spotify</h3>
+        <p>
+          Aplikasi untuk memutar sebuah lagu
+        </p>
+        <a href="root.html" class="project-link" target="_blank" rel="noopener">🔗 Lihat Project</a>
+      </article>
+  
+      <article class="project-item" tabindex="0">
+        <h3>❓ penghitung ganjilgenap</h3>
+        <p>
+          sebuah website yang bisa menghitung angka ganjil dan genap dengan mudah
+        </p>
+        <a href="Bu Maya/ganjilgenap.html" class="project-link" target="_blank" rel="noopener">🔗 Lihat Project</a>
+      </article>
+  
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" aria-label="Contact section">
+    <h2>📩 Contact Me</h2>
+    <form id="contact-form" novalidate>
+  
+      <label for="name">Nama Lengkap</label>
+      <input type="text" id="name" name="name" placeholder="Nama Anda" aria-label="Nama Anda" required />
+      <div class="error" id="name-error"></div>
+  
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email Anda" aria-label="Email Anda" required />
+      <div class="error" id="email-error"></div>
+  
+      <label for="message">Pesan</label>
+      <textarea id="message" name="message" rows="4" placeholder="Tulis pesan Anda..." aria-label="Pesan Anda" required></textarea>
+      <div class="error" id="message-error"></div>
+  
+      <button type="submit" aria-label="Kirim pesan">📨 Kirim Pesan</button>
+      <p class="success-msg" id="success-message" aria-live="polite"></p>
+  
+    </form>
+  </section>
+
+<footer>
+    &copy; 2025 Farhan Rafiansyah SMK Plus pelita nusantara
+</footer>
+
+<script src="scr.js"></script>
+
+</body>
+</html>
