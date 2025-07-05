@@ -31,7 +31,7 @@ form.addEventListener('submit', function (e) {
   }
 
   if (messageInput.value.trim() === '') {
-    messageError.textContent = 'Please enter a message';
+    messageError.textContent = 'Tolong isi pesan dulu';
     valid = false;
   }
 
