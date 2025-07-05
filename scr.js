@@ -36,7 +36,7 @@ form.addEventListener('submit', function (e) {
   }
 
   if (valid) {
-    successMsg.textContent = 'Thank you for your message!';
+    successMsg.textContent = 'Terima kasih, pesan anda telah terkirim';
     form.reset();
   }
 });
