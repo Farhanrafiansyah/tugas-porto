@@ -13,7 +13,7 @@ html {
 /* BODY */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #1f1f2b, #12122b);
+    background: linear-gradient(to right, #4c4c97, #353566);
     color: #e4e4e4;
     line-height: 1.6;
     transition: background 0.5s ease;
